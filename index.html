@@ -11,62 +11,191 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <div class="content offer-block">
-      <h2 class="title-block">What do we offer</h2>
-      <div class="line"></div>
-      <div class="row">
-        <div class="col service-col">
-          <img class="service-img" src="./images/Headset.svg" alt="" />
-          <h3 class="service-title">Support 24/7</h3>
+    <div class="top-section">
+      <div class="container">
+        <div class="header">
+          <div class="header__logo">
+            <a href="#">
+              <svg>
+                <use href="./images/favicons/sprite.svg#logo" />
+              </svg>
+            </a>
+          </div>
+          <div class="header__nav">
+            <ul class="nav__nav-links">
+              <li class="nav-links__item">
+                <a class="nav-links__link" href="#">Stays</a>
+              </li>
+              <li class="nav-links__item">
+                <a class="nav-links__link" href="#">Attractions</a>
+              </li>
+            </ul>
+
+            <ul class="nav__nav-button">
+              <li class="nav-button__item">
+                <button class="nav-button__button">
+                  <svg class="button__svg button__svg--theme">
+                    <use href="./images/favicons/sprite.svg#theme" />
+                  </svg>
+                </button>
+              </li>
+              <li class="nav-button__item">
+                <button class="nav-button__button">
+                  <svg class="button__svg button__svg--account">
+                    <use href="./images/favicons/sprite.svg#account" />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="col service-col">
-          <img class="service-img" src="./images/Forum.svg" alt="" />
-          <h3 class="service-title">Communicate directly</h3>
-        </div>
-        <div class="col service-col">
-          <img class="service-img" src="./images/Device.svg" alt="" />
-          <h3 class="service-title">Book online</h3>
-        </div>
-        <div class="col service-col">
-          <img class="service-img" src="./images/Thumb.svg" alt="" />
-          <h3 class="service-title">Real guest reviews</h3>
+        <div class="top-section__content">
+          <h1 class="top-section__title">
+            Discover stays <br />
+            to live, work or just relax
+          </h1>
+
+          <form class="top-section__form-search form" action="/" method="get">
+            <div class="form__input form__destination">
+              <label class="label" for="destination">
+                Your destination or hotel name
+              </label>
+              <input
+                class="input input--destination"
+                required
+                id="destination"
+                type="text"
+                name="destination"
+                value="New York"
+              />
+            </div>
+            <div class="form__input form__dates">
+              <label class="label" for="dates">Check-in — Check-out</label>
+              <input
+                class="input input--dates"
+                required
+                id="dates"
+                type="text"
+                name="dates"
+                value="Tue 15 Sept — Sat 19 Sept"
+              />
+            </div>
+            <div class="form__input form__param">
+              <label class="label" for="param"></label>
+              <input
+                class="input input--param"
+                required
+                id="param"
+                type="text"
+                name="name"
+                value="2 Adults — 0 Children — 1 Room"
+              />
+            </div>
+            <button class="form__button">Search</button>
+          </form>
+
+          <div class="top-section__download">
+            <img src="./images/google-play-badge.png" />
+            <img src="./images/app-store.png" />
+          </div>
         </div>
       </div>
     </div>
-    <div class="container-footer">
-      <div class="content footer">
-        <div class="footer-list">
-          <div class="about">
-            <h4 class="title-footer-list">About</h4>
-            <ul class="item-footer-list">
-              <li>How Triphouse works</li>
-              <li>Careers</li>
-              <li>Privacy</li>
-              <li>Terms</li>
+    <div class="advantages container content">
+      <h2 class="advantages__title title">What do we offer</h2>
+      <div class="advantages__line"></div>
+      <div class="advantages__list">
+        <div class="advantages__card">
+          <div class="advantages__icon-wrapper">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#support" />
+            </svg>
+          </div>
+          <p class="advantages__text">Support 24/7</p>
+        </div>
+        <div class="advantages__card">
+          <div class="advantages__icon-wrapper">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#forum" />
+            </svg>
+          </div>
+          <h3 class="advantages__text">Communicate directly</h3>
+        </div>
+        <div class="advantages__card">
+          <div class="advantages__icon-wrapper">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#device" />
+            </svg>
+          </div>
+          <h3 class="advantages__text">Book online</h3>
+        </div>
+        <div class="advantages__card">
+          <div class="advantages__icon-wrapper">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#thumb" />
+            </svg>
+          </div>
+          <h3 class="advantages__text">Real guest reviews</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container content">
+        <div class="footer__list">
+          <div class="footer__items">
+            <h4 class="list__title">About</h4>
+            <ul class="list__items">
+              <li class="footer__item">
+                <a class="footer__link" href="#">How Triphouse works</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Terms</a>
+              </li>
             </ul>
           </div>
-          <div class="property-types">
-            <h4 class="title-footer-list">Property types</h4>
-            <ul class="item-footer-list">
-              <li>Guest houses</li>
-              <li>Hotels</li>
-              <li>Apartments</li>
-              <li>Villas</li>
-              <li>Holiday homes</li>
-              <li>Hostels</li>
+          <div class="footer__items">
+            <h4 class="list__title">Property types</h4>
+            <ul class="list__items">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Guest houses</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Hotels</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Apartments</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Villas</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Holiday homes</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">Hostels</a>
+              </li>
             </ul>
           </div>
-          <div class="support">
-            <h4 class="title-footer-list">Support</h4>
-            <ul class="item-footer-list">
-              <li>Contact Customer Service</li>
-              <li>FAQ</li>
+          <div class="footer__items">
+            <h4 class="list__title">Support</h4>
+            <ul class="list__items">
+              <li class="footer__item">
+                <a class="footer__link" href="#">Contact Customer Service</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">FAQ</a>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="author">
-          <p>© 2022Triphouse, Inc. All rights reserved</p>
-        </div>
+        <p class="footer__author">© 2022Triphouse, Inc. All rights reserved</p>
       </div>
     </div>
   </body>

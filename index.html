@@ -2,10 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <link rel="stylesheet" href="styles/styles.css" />
@@ -101,98 +98,112 @@
         </div>
       </div>
     </div>
-    <div class="advantages container content">
+    <div class="advantages container">
       <h2 class="advantages__title title">What do we offer</h2>
-      <div class="advantages__line"></div>
-      <div class="advantages__list">
-        <div class="advantages__card">
-          <div class="advantages__icon-wrapper">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-4">
+          <div class="advantages__card">
             <svg class="advantages__icon">
               <use href="./images/favicons/sprite.svg#support" />
             </svg>
+
+            <p class="advantages__text">Support 24/7</p>
           </div>
-          <p class="advantages__text">Support 24/7</p>
         </div>
-        <div class="advantages__card">
-          <div class="advantages__icon-wrapper">
+        <div class="col-lg-3 col-md-6 col-sm-4">
+          <div class="advantages__card">
             <svg class="advantages__icon">
               <use href="./images/favicons/sprite.svg#forum" />
             </svg>
+
+            <h3 class="advantages__text">Communicate directly</h3>
           </div>
-          <h3 class="advantages__text">Communicate directly</h3>
         </div>
-        <div class="advantages__card">
-          <div class="advantages__icon-wrapper">
+        <div class="col-lg-3 col-md-6 col-sm-4">
+          <div class="advantages__card">
             <svg class="advantages__icon">
               <use href="./images/favicons/sprite.svg#device" />
             </svg>
+
+            <h3 class="advantages__text">Book online</h3>
           </div>
-          <h3 class="advantages__text">Book online</h3>
         </div>
-        <div class="advantages__card">
-          <div class="advantages__icon-wrapper">
+        <div class="col-lg-3 col-md-6 col-sm-4">
+          <div class="advantages__card">
             <svg class="advantages__icon">
               <use href="./images/favicons/sprite.svg#thumb" />
             </svg>
+
+            <h3 class="advantages__text">Real guest reviews</h3>
           </div>
-          <h3 class="advantages__text">Real guest reviews</h3>
         </div>
       </div>
     </div>
 
     <div class="footer">
-      <div class="container content">
-        <div class="footer__list">
-          <div class="footer__items">
-            <h4 class="list__title">About</h4>
-            <ul class="list__items">
-              <li class="footer__item">
-                <a class="footer__link" href="#">How Triphouse works</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Careers</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Privacy</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Terms</a>
-              </li>
-            </ul>
+      <div class="container">
+        <div class="footer__logo">
+          <svg>
+            <use href="./images/favicons/sprite.svg#logo" />
+          </svg>
+        </div>
+        <div class="row footer__list">
+          <div class="col-lg-4 col-md-3 col-sm-1">
+            <div class="footer__element">
+              <h4 class="footer__title">About</h4>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">How Triphouse works</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Careers</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Privacy</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Terms</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="footer__items">
-            <h4 class="list__title">Property types</h4>
-            <ul class="list__items">
-              <li class="footer__item">
-                <a class="footer__link" href="#">Guest houses</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Hotels</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Apartments</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Villas</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Holiday homes</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">Hostels</a>
-              </li>
-            </ul>
+          <div class="col-lg-4 col-md-3 col-sm-2">
+            <div class="footer__element">
+              <h4 class="footer__title">Property types</h4>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Guest houses</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Hotels</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Apartments</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Villas</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Holiday homes</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Hostels</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="footer__items">
-            <h4 class="list__title">Support</h4>
-            <ul class="list__items">
-              <li class="footer__item">
-                <a class="footer__link" href="#">Contact Customer Service</a>
-              </li>
-              <li class="footer__item">
-                <a class="footer__link" href="#">FAQ</a>
-              </li>
-            </ul>
+          <div class="col-lg-4 col-md-3 col-sm-1">
+            <div class="footer__element">
+              <h4 class="footer__title">Support</h4>
+              <ul class="footer__items">
+                <li class="footer__item">
+                  <a class="footer__link" href="#">Contact Customer Service</a>
+                </li>
+                <li class="footer__item">
+                  <a class="footer__link" href="#">FAQ</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <p class="footer__author">© 2022Triphouse, Inc. All rights reserved</p>

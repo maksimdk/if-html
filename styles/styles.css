@@ -14,6 +14,7 @@
   --bg-main-color: #eaf0f9;
 
   --col-width: calc(100% / 12);
+  --padding-main: 104px;
   --unit: 16px;
   --block-space: 120px;
 }
@@ -33,8 +34,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1232px;
-  padding: 0 var(--unit);
+  max-width: 1440px;
+  padding: 0 var(--padding-main);
 }
 
 .row {
@@ -399,6 +400,7 @@ input::-webkit-input-placeholder {
   /*For tablets:*/
 
   :root {
+    --padding-main: 52px;
     --block-space: 60px;
   }
 
@@ -474,8 +476,8 @@ input::-webkit-input-placeholder {
   }
 
   .advantages__text {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 22px;
   }
 
   .footer__list{
@@ -504,6 +506,7 @@ input::-webkit-input-placeholder {
 
   :root {
     --col-width: calc(100% / 6);
+    --padding-main: 16px;
     --block-space: 40px;
   }
 

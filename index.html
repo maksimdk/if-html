@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <div class="top-section">
+    <div class="header">
       <div class="container">
-        <div class="header">
+        <div class="header__wrapper">
           <div class="header__logo">
             <a href="#">
               <svg>
@@ -43,59 +43,146 @@
                   </svg>
                 </button>
               </li>
+              <li class="nav-button__item nav-button__item--burger">
+                <button class="nav-button__button">
+                  <svg class="button__svg button__svg--burger">
+                    <use href="./images/favicons/sprite.svg#burger" />
+                  </svg>
+                </button>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="top-section__content">
-          <h1 class="top-section__title">
-            Discover stays <br />
-            to live, work or just relax
-          </h1>
+      </div>
+    </div>
+    <div class="top-section">
+      <div class="container">
+        <!--        <div class="top-section__content">-->
+        <h1 class="top-section__title">
+          Discover stays to&nbsp;live,&nbsp;work or just relax
+        </h1>
 
-          <form class="top-section__form-search form" action="/" method="get">
-            <div class="form__input form__destination">
-              <label class="label" for="destination">
-                Your destination or hotel name
-              </label>
-              <input
-                class="input input--destination"
-                required
-                id="destination"
-                type="text"
-                name="destination"
-                value="New York"
-              />
-            </div>
-            <div class="form__input form__dates">
-              <label class="label" for="dates">Check-in — Check-out</label>
-              <input
-                class="input input--dates"
-                required
-                id="dates"
-                type="text"
-                name="dates"
-                value="Tue 15 Sept — Sat 19 Sept"
-              />
-            </div>
-            <div class="form__input form__param">
-              <label class="label" for="param"></label>
-              <input
-                class="input input--param"
-                required
-                id="param"
-                type="text"
-                name="name"
-                value="2 Adults — 0 Children — 1 Room"
-              />
-            </div>
-            <button class="form__button">Search</button>
-          </form>
-
-          <div class="top-section__download">
-            <img src="./images/google-play-badge.png" />
-            <img src="./images/app-store.png" />
+        <form class="top-section__form-search form" action="/" method="get">
+          <div class="form__input form__destination">
+            <label class="label" for="destination">
+              Your destination or hotel name
+            </label>
+            <input
+              class="input input--destination"
+              required
+              id="destination"
+              type="text"
+              name="destination"
+              value="New York"
+            />
           </div>
+          <div class="form__input form__dates">
+            <label class="label" for="dates">Check-in — Check-out</label>
+            <input
+              class="input input--dates"
+              required
+              id="dates"
+              type="text"
+              name="dates"
+              value="Tue 15 Sept − Sat 19 Sept"
+            />
+          </div>
+          <div class="form__input form__param">
+            <label class="label" for="param"></label>
+            <input
+              class="input input--param"
+              required
+              id="param"
+              type="text"
+              name="name"
+              value="2 Adults − 0 Children − 1 Room"
+            />
+          </div>
+          <button class="form__button">Search</button>
+        </form>
+
+        <div class="form-mobile">
+          <form class="form-mb" action="/" method="get">
+            <div class="form__input-mb form__destination-mb">
+              <input
+                      class="input-mb input--destination-mb"
+                      required
+                      id="destination-mb"
+                      type="text"
+                      name="destination"
+              />
+
+              <label class="label-mb label-mb--destination" for="destination-mb">Your destination or hotel name</label>
+
+
+              <svg class="lupa">
+                <use href="./images/favicons/sprite.svg#search" />
+              </svg>
+            </div>
+            <div class="form__input-mb form__checkIn-mb">
+              <input
+                      class="input-mb input--checkIn-mb"
+                      required
+                      id="checkIn-mb"
+                      type="text"
+                      name="dates"
+              />
+              <label class="label-mb" for="checkIn-mb"> Check-in date </label>
+            </div>
+            <div class="form__input-mb form__checkOut-mb">
+              <input
+                      class="input-mb input--checkOut-mb"
+                      required
+                      id="checkOut-mb"
+                      type="text"
+                      name="dates"
+              />
+              <label class="label-mb" for="checkOut-mb"> Check-out date </label>
+            </div>
+
+            <div class="form__input-mb form__params-mb">
+              <div class="form__input-mb form__adults-mb">
+                <input
+                  class="input-mb input--adults-mb"
+                  required
+                  id="adults"
+                  type="text"
+                  name="name"
+                />
+                <label class="label-mb" for="adults">Adults</label>
+              </div>
+              <div class="form__input-mb form__children-mb">
+                <input
+                  class="input-mb input--children-mb"
+                  required
+                  id="children"
+                  type="text"
+                  name="name"
+                />
+                <label class="label-mb" for="children">Children</label>
+              </div>
+
+              <div class="form__input-mb form__rooms-mb">
+                <input
+                  class="input-mb input--rooms-mb"
+                  required
+                  id="rooms"
+                  type="text"
+                  name="name"
+                />
+                <label class="label-mb" for="rooms">Rooms</label>
+              </div>
+            </div>
+
+            <button class="form__button-mb">Search</button>
+          </form>
         </div>
+
+        <div class="top-section__download">
+          <img src="./images/google-play-badge.png" />
+          <img src="./images/app-store.png" />
+        </div>
+        <!--        </div>-->
       </div>
     </div>
     <div class="advantages container">
@@ -139,7 +226,6 @@
         </div>
       </div>
     </div>
-
     <div class="footer">
       <div class="container">
         <div class="footer__logo">

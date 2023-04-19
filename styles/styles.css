@@ -536,11 +536,12 @@ input::-webkit-input-placeholder {
   }
 
   .top-section {
-    padding-top: 190px;
+    padding-top: 150px;
   }
 
   .top-section__title {
     font-size: 40px;
+    margin-bottom: 100px;
   }
 
   .top-section__form-search {
@@ -586,11 +587,11 @@ input::-webkit-input-placeholder {
   .input-mb {
     width: 100%;
     height: 48px;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     color: var(--text-main-color);
-    padding: 6px 8px;
+    padding: 24px 8px 6px;
     border: none;
     border-radius: 4px;
     text-align: left;
@@ -625,7 +626,7 @@ input::-webkit-input-placeholder {
 
   .input--destination-mb {
     width: 100%;
-    padding-left: 36px;
+    padding: 15px 8px 15px 36px;
   }
 
   .input--destination-mb:focus ~ label,

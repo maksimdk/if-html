@@ -396,7 +396,20 @@ input::-webkit-input-placeholder {
   position: relative;
 }
 
-.homes__cards:after {
+/*.homes__cards:after {*/
+/*  content: "";*/
+/*  position: absolute;*/
+/*  width: 40px;*/
+/*  height: 40px;*/
+/*  border-radius: 50%;*/
+/*  box-shadow: 0 4px 4px 0 var(--dark-mode-3-color);*/
+/*  background-color: var(--stroke-color);*/
+/*  top: 30%;*/
+/*  right: -1%;*/
+/*  transform: translate(0, 0);*/
+/*}*/
+
+.arrow-block{
   content: "";
   position: absolute;
   width: 40px;
@@ -405,8 +418,17 @@ input::-webkit-input-placeholder {
   box-shadow: 0 4px 4px 0 var(--dark-mode-3-color);
   background-color: var(--stroke-color);
   top: 30%;
-  right: -2%;
-  transform: translate(-30%, 2%);
+  right: -1%;
+  transform: translate(0, 0);
+  padding: 11px;
+}
+
+.arrow{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 7px;
+  height: 18px;
 }
 
 .homes__card {
@@ -822,13 +844,39 @@ input::-webkit-input-placeholder {
     display: none;
   }
 
-  .homes__cards:after {
+  /*.homes__cards:after {*/
+  /*  width: 35px;*/
+  /*  height: 35px;*/
+  /*  top: 30%;*/
+  /*  right: -2%;*/
+  /*  transform: translate(-30%, 2%);*/
+  /*}*/
+
+  .arrow-block{
     width: 35px;
     height: 35px;
     top: 30%;
-    right: -2%;
-    transform: translate(-30%, 2%);
+    right: -1%;
+    transform: translate(0, 0);
+    padding: 10px;
   }
+
+  .arrow{
+    margin: 0 auto;
+    width: 5px;
+    height: 15px;
+  }
+
+  /*.arrow{*/
+  /*  position: absolute;*/
+  /*  width: 6px;*/
+  /*  height: 16px;*/
+  /*  color: var(--text-main-color);*/
+  /*  z-index: 1;*/
+  /*  top: 34%;*/
+  /*  right: 0%;*/
+  /*  transform: translate(-96%, -16%);*/
+  /*}*/
 
   .homes__card {
     justify-content: center;
@@ -978,13 +1026,39 @@ input::-webkit-input-placeholder {
     margin-bottom: 32px;
   }
 
-  .homes__cards:after {
+  /*.homes__cards:after {*/
+  /*  width: 28px;*/
+  /*  height: 28px;*/
+  /*  right: -3%;*/
+  /*  top: 40%;*/
+  /*  transform: translate(-43%, -95%);*/
+  /*}*/
+
+  .arrow-block{
     width: 28px;
     height: 28px;
-    right: -3%;
-    top: 40%;
-    transform: translate(-43%, -95%);
+    top: 30%;
+    right: -1%;
+    transform: translate(0, 0);
+    padding: 7px;
   }
+
+  .arrow{
+    margin: 0 auto;
+    width: 5px;
+    height: 14px;
+  }
+
+  /*.arrow{*/
+  /*  position: absolute;*/
+  /*  width: 5px;*/
+  /*  height: 14px;*/
+  /*  color: var(--text-main-color);*/
+  /*  z-index: 1;*/
+  /*  top: 34%;*/
+  /*  right: 0%;*/
+  /*  transform: translate(-50%, -34%);*/
+  /*}*/
 
   .homes__img {
     margin-bottom: 8px;
@@ -1019,7 +1093,7 @@ input::-webkit-input-placeholder {
     font-size: 15px;
     line-height: 18px;
     text-decoration: underline;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .footer__items {

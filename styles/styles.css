@@ -438,7 +438,7 @@ input::-webkit-input-placeholder {
 }
 
 .homes__img {
-  max-width: 296px;
+  /*max-width: 296px;*/
   width: 100%;
   aspect-ratio: 1/1;
   margin-bottom: 24px;

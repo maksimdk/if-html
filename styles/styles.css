@@ -145,6 +145,16 @@ body {
   top: 35px;
   left: 50%;
   transform: translateX(-50%);
+  animation: underline-link 250ms;
+}
+
+@keyframes underline-link {
+  from{
+    width: 0
+  }
+  to{
+    width: 85%
+  }
 }
 
 .nav-links__link {

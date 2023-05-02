@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <div class="container">
         <div class="header__wrapper">
           <div class="header__logo">
@@ -18,7 +18,7 @@
               </svg>
             </a>
           </div>
-          <div class="header__nav">
+          <nav class="header__nav">
             <ul class="nav__nav-links">
               <li class="nav-links__item">
                 <a class="nav-links__link" href="#">Stays</a>
@@ -51,222 +51,333 @@
                 </button>
               </li>
             </ul>
-          </div>
+          </nav>
         </div>
       </div>
-    </div>
-    <div class="top-section">
-      <div class="container">
-        <h1 class="top-section__title">
-          Discover stays to&nbsp;live,&nbsp;work or just relax
-        </h1>
-        <form class="top-section__form-search form" action="/" method="get">
-          <div class="form__input form__destination">
-            <label class="label" for="destination">
-              Your destination or hotel name
-            </label>
-            <input
-              class="input input--destination"
-              required
-              id="destination"
-              type="text"
-              name="destination"
-              value="New York"
-            />
-          </div>
-          <div class="form__input form__dates">
-            <label class="label" for="dates">Check-in — Check-out</label>
-            <input
-              class="input input--dates"
-              required
-              id="dates"
-              type="text"
-              name="dates"
-              value="Tue 15 Sept − Sat 19 Sept"
-            />
-          </div>
-          <div class="form__input form__param">
-            <label class="label" for="param"></label>
-            <input
-              class="input input--param"
-              required
-              id="param"
-              type="text"
-              name="name"
-              value="2 Adults − 0 Children − 1 Room"
-            />
-          </div>
-          <button class="form__button">Search</button>
-        </form>
-
-        <div class="form-mobile">
-          <form class="form-mb" action="/" method="get">
-            <div class="form__input-mb form__destination-mb">
+    </header>
+    <main class="main">
+      <section class="top-section">
+        <div class="container">
+          <h1 class="top-section__title">
+            Discover stays to&nbsp;live,&nbsp;work or just relax
+          </h1>
+          <form class="top-section__form-search form" action="/" method="get">
+            <div class="form__input form__destination">
+              <label class="label" for="destination">
+                Your destination or hotel name
+              </label>
               <input
-                class="input-mb input--destination-mb"
+                class="input input--destination"
                 required
-                id="destination-mb"
+                id="destination"
                 type="text"
                 name="destination"
+                value="New York"
               />
-              <label class="label-mb label-mb--destination" for="destination-mb"
-                >Your destination or hotel name</label
-              >
-              <svg class="lupa">
-                <use href="./images/favicons/sprite.svg#search" />
-              </svg>
             </div>
-            <div class="form__input-mb form__checkIn-mb">
+            <div class="form__input form__dates">
+              <label class="label" for="dates">Check-in — Check-out</label>
               <input
-                class="input-mb input--checkIn-mb"
+                class="input input--dates"
                 required
-                id="checkIn-mb"
+                id="dates"
                 type="text"
                 name="dates"
+                value="Tue 15 Sept − Sat 19 Sept"
               />
-              <label class="label-mb" for="checkIn-mb"> Check-in date </label>
             </div>
-            <div class="form__input-mb form__checkOut-mb">
+            <div class="form__input form__param">
+              <label class="label" for="param"></label>
               <input
-                class="input-mb input--checkOut-mb"
+                class="input input--param"
                 required
-                id="checkOut-mb"
+                id="param"
                 type="text"
-                name="dates"
+                name="name"
+                value="2 Adults − 0 Children − 1 Room"
               />
-              <label class="label-mb" for="checkOut-mb"> Check-out date </label>
             </div>
-
-            <div class="form__input-mb form__params-mb">
-              <div class="form__input-mb form__adults-mb">
-                <input
-                  class="input-mb input--adults-mb"
-                  required
-                  id="adults"
-                  type="text"
-                  name="name"
-                />
-                <label class="label-mb" for="adults">Adults</label>
-              </div>
-              <div class="form__input-mb form__children-mb">
-                <input
-                  class="input-mb input--children-mb"
-                  required
-                  id="children"
-                  type="text"
-                  name="name"
-                />
-                <label class="label-mb" for="children">Children</label>
-              </div>
-
-              <div class="form__input-mb form__rooms-mb">
-                <input
-                  class="input-mb input--rooms-mb"
-                  required
-                  id="rooms"
-                  type="text"
-                  name="name"
-                />
-                <label class="label-mb" for="rooms">Rooms</label>
-              </div>
-            </div>
-
-            <button class="form__button-mb">Search</button>
+            <button class="form__button">Search</button>
           </form>
-        </div>
 
-        <div class="top-section__download">
-          <img src="./images/google-play-badge.png" />
-          <img src="./images/app-store.png" />
-        </div>
-      </div>
-    </div>
-    <div class="advantages container">
-      <h2 class="advantages__title title">What do we offer</h2>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-4">
-          <div class="advantages__card">
-            <svg class="advantages__icon">
-              <use href="./images/favicons/sprite.svg#support" />
-            </svg>
-            <h3 class="advantages__text">Support 24/7</h3>
+          <div class="form-mobile">
+            <form class="form-mb" action="/" method="get">
+              <div class="form__input-mb form__destination-mb">
+                <input
+                  class="input-mb input--destination-mb"
+                  required
+                  id="destination-mb"
+                  type="text"
+                  name="destination"
+                />
+                <label
+                  class="label-mb label-mb--destination"
+                  for="destination-mb"
+                  >Your destination or hotel name</label
+                >
+                <svg class="lupa">
+                  <use href="./images/favicons/sprite.svg#search" />
+                </svg>
+              </div>
+              <div class="form__input-mb form__checkIn-mb">
+                <input
+                  class="input-mb input--checkIn-mb"
+                  required
+                  id="checkIn-mb"
+                  type="text"
+                  name="dates"
+                />
+                <label class="label-mb" for="checkIn-mb"> Check-in date </label>
+              </div>
+              <div class="form__input-mb form__checkOut-mb">
+                <input
+                  class="input-mb input--checkOut-mb"
+                  required
+                  id="checkOut-mb"
+                  type="text"
+                  name="dates"
+                />
+                <label class="label-mb" for="checkOut-mb">
+                  Check-out date
+                </label>
+              </div>
+
+              <div class="form__input-mb form__params-mb">
+                <div class="form__input-mb form__adults-mb">
+                  <input
+                    class="input-mb input--adults-mb"
+                    required
+                    id="adults"
+                    type="text"
+                    name="name"
+                  />
+                  <label class="label-mb" for="adults">Adults</label>
+                </div>
+                <div class="form__input-mb form__children-mb">
+                  <input
+                    class="input-mb input--children-mb"
+                    required
+                    id="children"
+                    type="text"
+                    name="name"
+                  />
+                  <label class="label-mb" for="children">Children</label>
+                </div>
+
+                <div class="form__input-mb form__rooms-mb">
+                  <input
+                    class="input-mb input--rooms-mb"
+                    required
+                    id="rooms"
+                    type="text"
+                    name="name"
+                  />
+                  <label class="label-mb" for="rooms">Rooms</label>
+                </div>
+              </div>
+
+              <button class="form__button-mb">Search</button>
+            </form>
+          </div>
+
+          <div class="top-section__download">
+            <img src="./images/google-play-badge.png" />
+            <img src="./images/app-store.png" />
           </div>
         </div>
-        <div class="col-lg-3 col-md-6 col-sm-4">
-          <div class="advantages__card">
-            <svg class="advantages__icon">
-              <use href="./images/favicons/sprite.svg#forum" />
-            </svg>
-            <h3 class="advantages__text">Communicate directly</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-4">
-          <div class="advantages__card">
-            <svg class="advantages__icon">
-              <use href="./images/favicons/sprite.svg#device" />
-            </svg>
-            <h3 class="advantages__text">Book online</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-sm-4">
-          <div class="advantages__card">
-            <svg class="advantages__icon">
-              <use href="./images/favicons/sprite.svg#thumb" />
-            </svg>
-            <h3 class="advantages__text">Real guest reviews</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="homes">
-      <div class="container">
-        <h2 class="homes__title title">Homes guests loves</h2>
-        <div class="row homes__cards">
-          <div class="col-lg-3 col-md-6 col-sm-3">
-            <div class="homes__card">
-              <img class="homes__img" src="./images/hotel-leopold.jpg" alt="" />
-              <a class="homes__link" href="#">Hotel Leopold</a>
-              <p class="homes__text">Saint Petersburg, Russia</p>
+      </section>
+      <section class="advantages container">
+        <h2 class="advantages__title title">What do we offer</h2>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="advantages__card">
+              <svg class="advantages__icon">
+                <use href="./images/favicons/sprite.svg#support" />
+              </svg>
+              <h3 class="advantages__text">Support 24/7</h3>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-3">
-            <div class="homes__card">
-              <img
-                class="homes__img"
-                src="./images/apartment-sunshine.jpg"
-                alt=""
-              />
-              <a class="homes__link" href="#">Apartment Sunshine</a>
-              <p class="homes__text">Santa Cruz de Tenerife, Spain</p>
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="advantages__card">
+              <svg class="advantages__icon">
+                <use href="./images/favicons/sprite.svg#forum" />
+              </svg>
+              <h3 class="advantages__text">Communicate directly</h3>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
-            <div class="homes__card">
-              <img class="homes__img" src="./images/villa-kunerad.jpg" alt="" />
-              <a class="homes__link" href="#">Villa Kunerad</a>
-              <p class="homes__text">Vysokie Tatry, Slowakia</p>
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="advantages__card">
+              <svg class="advantages__icon">
+                <use href="./images/favicons/sprite.svg#device" />
+              </svg>
+              <h3 class="advantages__text">Book online</h3>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
-            <div class="homes__card">
-              <img
-                class="homes__img"
-                src="./images/hostel-friendship.jpg"
-                alt=""
-              />
-              <a class="homes__link" href="#">Hostel Friendship</a>
-              <p class="homes__text">Berlin, Germany</p>
+          <div class="col-lg-3 col-md-6 col-sm-4">
+            <div class="advantages__card">
+              <svg class="advantages__icon">
+                <use href="./images/favicons/sprite.svg#thumb" />
+              </svg>
+              <h3 class="advantages__text">Real guest reviews</h3>
             </div>
           </div>
-          <div class="arrow-block">
+        </div>
+      </section>
+      <section class="homes">
+        <div class="container">
+          <h2 class="homes__title title">Homes guests loves</h2>
+          <div class="row homes__cards">
+            <div class="col-lg-3 col-md-6 col-sm-3">
+              <div class="homes__card">
+                <img
+                  class="homes__img"
+                  src="./images/hotel-leopold.jpg"
+                  alt="Hotel Leopold"
+                />
+                <a class="homes__link" href="#">Hotel Leopold</a>
+                <p class="homes__text">Saint Petersburg, Russia</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-3">
+              <div class="homes__card">
+                <img
+                  class="homes__img"
+                  src="./images/apartment-sunshine.jpg"
+                  alt="Apartment Sunshine"
+                />
+                <a class="homes__link" href="#">Apartment Sunshine</a>
+                <p class="homes__text">Santa Cruz de Tenerife, Spain</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
+              <div class="homes__card">
+                <img
+                  class="homes__img"
+                  src="./images/villa-kunerad.jpg"
+                  alt="Villa Kunerad"
+                />
+                <a class="homes__link" href="#">Villa Kunerad</a>
+                <p class="homes__text">Vysokie Tatry, Slowakia</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
+              <div class="homes__card">
+                <img
+                  class="homes__img"
+                  src="./images/hostel-friendship.jpg"
+                  alt="Hostel Friendship"
+                />
+                <a class="homes__link" href="#">Hostel Friendship</a>
+                <p class="homes__text">Berlin, Germany</p>
+              </div>
+            </div>
+            <button class="arrow-block btn homes__arrow-block" type="button">
+              <svg class="arrow">
+                <use href="./images/favicons/sprite.svg#arrow" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="destination">
+        <div class="container">
+          <h2 class="destination__title title">The best destinations</h2>
+
+          <div class="destination__menu">
+            <button class="btn destination__btn" type="button">Regions</button>
+            <button class="btn destination__btn" type="button">Cities</button>
+            <button class="btn destination__btn" type="button">
+              Places <span class="_displ-none">of interest</span>
+            </button>
+          </div>
+
+          <div class="row destination__cards">
+            <div class="col-lg-3 col-md-6 col-sm-3">
+              <div class="destination__card">
+                <img
+                  class="destination__img"
+                  src="./images/maldives.jpg"
+                  alt="Maldives"
+                />
+                <button class="btn destination__button-img">Book now</button>
+                <a class="destination__link" href="#">Maldives</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-3">
+              <div class="destination__card">
+                <img
+                  class="destination__img"
+                  src="./images/spain.jpg"
+                  alt="Spain"
+                />
+                <button class="btn destination__button-img">Book now</button>
+                <a class="destination__link" href="#">Spain</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
+              <div class="destination__card">
+                <img
+                  class="destination__img"
+                  src="./images/norway.jpg"
+                  alt="Norway"
+                />
+                <button class="btn destination__button-img">Book now</button>
+                <a class="destination__link" href="#">Norway</a>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
+              <div class="destination__card">
+                <img
+                  class="destination__img"
+                  src="./images/island.jpg"
+                  alt="Island"
+                />
+                <button class="btn destination__button-img">Book now</button>
+                <a class="destination__link" href="#">Island</a>
+              </div>
+            </div>
+          </div>
+          <button
+            class="arrow-block btn destination__arrow-block"
+            type="button"
+          >
             <svg class="arrow">
               <use href="./images/favicons/sprite.svg#arrow" />
             </svg>
+          </button>
+        </div>
+      </section>
+      <section class="sign-up">
+        <div class="container">
+          <div class="sign-up__wrapper">
+            <button class="close-block btn" type="button">
+              <svg class="close">
+                <use href="./images/favicons/sprite.svg#close" />
+              </svg>
+            </button>
+            <div class="sign-up__user-logo">
+              <svg class="user-logo">
+                <use href="./images/favicons/sprite.svg#user" />
+              </svg>
+            </div>
+            <div class="sign-up__logo">
+              <svg class="logo-sm">
+                <use href="./images/favicons/sprite.svg#logo" />
+              </svg>
+            </div>
+            <div class="sign-up__autoriz">
+              <h3 class="sign-up__title">
+                Sign up <span class="_displ-none--title">in the app</span>and
+                get 20% off your first booking
+              </h3>
+              <button class="btn sign-up__button">Sign up</button>
+              <a class="sign-up__link" href="#">Install</a>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="footer">
+      </section>
+    </main>
+    <footer class="footer">
       <div class="container">
         <div class="footer__logo">
           <svg>
@@ -334,6 +445,6 @@
         </div>
         <p class="footer__author">© 2022Triphouse, Inc. All rights reserved</p>
       </div>
-    </div>
+    </footer>
   </body>
 </html>

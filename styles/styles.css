@@ -708,6 +708,7 @@ input::-webkit-input-placeholder {
   display: flex;
   justify-content: space-between;
   margin-bottom: 31px;
+  gap: 20px;
 }
 
 .review__links {
@@ -745,7 +746,7 @@ input::-webkit-input-placeholder {
 }
 
 .review__score {
-  text-align: left;
+  text-align: end;
   font-size: 14px;
   line-height: 16px;
   color: var(--secondary-text-color);
@@ -763,6 +764,8 @@ input::-webkit-input-placeholder {
 }
 
 .user__icon {
+  display: flex;
+  flex-shrink: 0;
   margin-left: 5px;
   width: 53px;
   height: 53px;
@@ -1407,6 +1410,10 @@ input::-webkit-input-placeholder {
   .review__card {
   }
 
+  .review__card:nth-child(2n) {
+    display: none;
+  }
+
   .review__wrap {
   }
 
@@ -1472,7 +1479,6 @@ input::-webkit-input-placeholder {
   }
 
   .review__score {
-    text-align: left;
     font-size: 14px;
     line-height: 16px;
     color: var(--secondary-text-color);
@@ -1847,6 +1853,10 @@ input::-webkit-input-placeholder {
   }
 
   .review__card {
+  }
+
+  .review__card:not(:nth-child(1)) {
+    display: none;
   }
 
   .review__wrap {

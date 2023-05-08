@@ -2,10 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="keywords" content="booking, hotel, hostel, tourism" />
+    <meta name="author" content="Maksim Kot" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>TripHouse</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./images/favicons/booking-icon.svg"
+    />
   </head>
   <body>
     <header class="header">
@@ -21,30 +27,30 @@
           <nav class="header__nav">
             <ul class="nav__nav-links">
               <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Stays</a>
+                <a class="link nav-links__link" href="#">Stays</a>
               </li>
               <li class="nav-links__item">
-                <a class="nav-links__link" href="#">Attractions</a>
+                <a class="link nav-links__link" href="#">Attractions</a>
               </li>
             </ul>
 
             <ul class="nav__nav-button">
               <li class="nav-button__item">
-                <button class="nav-button__button">
+                <button class="btn nav-button__button">
                   <svg class="button__svg button__svg--theme">
                     <use href="./images/favicons/sprite.svg#theme" />
                   </svg>
                 </button>
               </li>
               <li class="nav-button__item">
-                <button class="nav-button__button">
+                <button class="btn nav-button__button">
                   <svg class="button__svg button__svg--account">
                     <use href="./images/favicons/sprite.svg#account" />
                   </svg>
                 </button>
               </li>
               <li class="nav-button__item nav-button__item--burger">
-                <button class="nav-button__button">
+                <button class="btn nav-button__button">
                   <svg class="button__svg button__svg--burger">
                     <use href="./images/favicons/sprite.svg#burger" />
                   </svg>
@@ -61,6 +67,7 @@
           <h1 class="top-section__title">
             Discover stays to&nbsp;live,&nbsp;work or just relax
           </h1>
+
           <form class="top-section__form-search form" action="/" method="get">
             <div class="form__input form__destination">
               <label class="label" for="destination">
@@ -176,112 +183,100 @@
                 </div>
               </div>
 
-              <button class="form__button-mb">Search</button>
+              <button class="btn form__button-mb">Search</button>
             </form>
           </div>
 
           <div class="top-section__download">
-            <img src="./images/google-play-badge.png" />
-            <img src="./images/app-store.png" />
+            <a href="#">
+              <img src="./images/google-play-badge.png" />
+            </a>
+            <a href="#">
+              <img src="./images/app-store.png" />
+            </a>
           </div>
         </div>
       </section>
       <section class="advantages container">
-        <h2 class="advantages__title title">What do we offer</h2>
-        <div class="row">
-          <div class="col-lg-3 col-md-6 col-sm-4">
-            <div class="advantages__card">
-              <svg class="advantages__icon">
-                <use href="./images/favicons/sprite.svg#support" />
-              </svg>
-              <h3 class="advantages__text">Support 24/7</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-4">
-            <div class="advantages__card">
-              <svg class="advantages__icon">
-                <use href="./images/favicons/sprite.svg#forum" />
-              </svg>
-              <h3 class="advantages__text">Communicate directly</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-4">
-            <div class="advantages__card">
-              <svg class="advantages__icon">
-                <use href="./images/favicons/sprite.svg#device" />
-              </svg>
-              <h3 class="advantages__text">Book online</h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 col-sm-4">
-            <div class="advantages__card">
-              <svg class="advantages__icon">
-                <use href="./images/favicons/sprite.svg#thumb" />
-              </svg>
-              <h3 class="advantages__text">Real guest reviews</h3>
-            </div>
-          </div>
-        </div>
+        <h2 class="title advantages__title">What do we offer</h2>
+        <ul class="row">
+          <li class="col-lg-3 col-md-6 col-sm-4 advantages__card">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#support" />
+            </svg>
+            <p class="advantages__text">Support 24/7</p>
+          </li>
+          <li class="col-lg-3 col-md-6 col-sm-4 advantages__card">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#forum" />
+            </svg>
+            <p class="advantages__text">Communicate directly</p>
+          </li>
+          <li class="col-lg-3 col-md-6 col-sm-4 advantages__card">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#device" />
+            </svg>
+            <p class="advantages__text">Book online</p>
+          </li>
+          <li class="col-lg-3 col-md-6 col-sm-4 advantages__card">
+            <svg class="advantages__icon">
+              <use href="./images/favicons/sprite.svg#thumb" />
+            </svg>
+            <p class="advantages__text">Real guest reviews</p>
+          </li>
+        </ul>
       </section>
       <section class="homes">
         <div class="container">
-          <h2 class="homes__title title">Homes guests loves</h2>
-          <div class="row homes__cards">
-            <div class="col-lg-3 col-md-6 col-sm-3">
-              <div class="homes__card">
-                <img
-                  class="homes__img"
-                  src="./images/hotel-leopold.jpg"
-                  alt="Hotel Leopold"
-                />
-                <a class="homes__link" href="#">Hotel Leopold</a>
-                <p class="homes__text">Saint Petersburg, Russia</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3">
-              <div class="homes__card">
-                <img
-                  class="homes__img"
-                  src="./images/apartment-sunshine.jpg"
-                  alt="Apartment Sunshine"
-                />
-                <a class="homes__link" href="#">Apartment Sunshine</a>
-                <p class="homes__text">Santa Cruz de Tenerife, Spain</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
-              <div class="homes__card">
-                <img
-                  class="homes__img"
-                  src="./images/villa-kunerad.jpg"
-                  alt="Villa Kunerad"
-                />
-                <a class="homes__link" href="#">Villa Kunerad</a>
-                <p class="homes__text">Vysokie Tatry, Slowakia</p>
-              </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
-              <div class="homes__card">
-                <img
-                  class="homes__img"
-                  src="./images/hostel-friendship.jpg"
-                  alt="Hostel Friendship"
-                />
-                <a class="homes__link" href="#">Hostel Friendship</a>
-                <p class="homes__text">Berlin, Germany</p>
-              </div>
-            </div>
-            <button class="arrow-block btn homes__arrow-block" type="button">
+          <h2 class="title homes__title">Homes guests loves</h2>
+          <ul class="row homes__cards">
+            <li class="col-lg-3 col-md-6 col-sm-3 homes__card">
+              <img
+                class="homes__img"
+                src="./images/hotel-leopold.jpg"
+                alt="Hotel Leopold"
+              />
+              <a class="link homes__link" href="#">Hotel Leopold</a>
+              <p class="homes__text">Saint Petersburg, Russia</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-3 homes__card">
+              <img
+                class="homes__img"
+                src="./images/apartment-sunshine.jpg"
+                alt="Apartment Sunshine"
+              />
+              <a class="link homes__link" href="#">Apartment Sunshine</a>
+              <p class="homes__text">Santa Cruz de Tenerife, Spain</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-3 homes__card _displ-none">
+              <img
+                class="homes__img"
+                src="./images/villa-kunerad.jpg"
+                alt="Villa Kunerad"
+              />
+              <a class="link homes__link" href="#">Villa Kunerad</a>
+              <p class="homes__text">Vysokie Tatry, Slowakia</p>
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-3 homes__card _displ-none">
+              <img
+                class="homes__img"
+                src="./images/hostel-friendship.jpg"
+                alt="Hostel Friendship"
+              />
+              <a class="link homes__link" href="#">Hostel Friendship</a>
+              <p class="homes__text">Berlin, Germany</p>
+            </li>
+            <button class="btn arrow-block homes__arrow-block" type="button">
               <svg class="arrow">
                 <use href="./images/favicons/sprite.svg#arrow" />
               </svg>
             </button>
-          </div>
+          </ul>
         </div>
       </section>
       <section class="destination">
         <div class="container">
-          <h2 class="destination__title title">The best destinations</h2>
+          <h2 class="title destination__title">The best destinations</h2>
 
           <div class="destination__menu">
             <button class="btn destination__btn" type="button">Regions</button>
@@ -291,8 +286,8 @@
             </button>
           </div>
 
-          <div class="row destination__cards">
-            <div class="col-lg-3 col-md-6 col-sm-3">
+          <ul class="row destination__cards">
+            <li class="col-lg-3 col-md-6 col-sm-3">
               <div class="destination__card">
                 <img
                   class="destination__img"
@@ -300,10 +295,10 @@
                   alt="Maldives"
                 />
                 <button class="btn destination__button-img">Book now</button>
-                <a class="destination__link" href="#">Maldives</a>
+                <a class="link destination__link" href="#">Maldives</a>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3">
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-3">
               <div class="destination__card">
                 <img
                   class="destination__img"
@@ -311,10 +306,10 @@
                   alt="Spain"
                 />
                 <button class="btn destination__button-img">Book now</button>
-                <a class="destination__link" href="#">Spain</a>
+                <a class="link destination__link" href="#">Spain</a>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-3 _displ-none">
               <div class="destination__card">
                 <img
                   class="destination__img"
@@ -322,10 +317,10 @@
                   alt="Norway"
                 />
                 <button class="btn destination__button-img">Book now</button>
-                <a class="destination__link" href="#">Norway</a>
+                <a class="link destination__link" href="#">Norway</a>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-3 _displ-none">
+            </li>
+            <li class="col-lg-3 col-md-6 col-sm-3 _displ-none">
               <div class="destination__card">
                 <img
                   class="destination__img"
@@ -333,12 +328,12 @@
                   alt="Island"
                 />
                 <button class="btn destination__button-img">Book now</button>
-                <a class="destination__link" href="#">Island</a>
+                <a class="link destination__link" href="#">Island</a>
               </div>
-            </div>
-          </div>
+            </li>
+          </ul>
           <button
-            class="arrow-block btn destination__arrow-block"
+            class="btn arrow-block destination__arrow-block"
             type="button"
           >
             <svg class="arrow">
@@ -350,7 +345,7 @@
       <section class="sign-up">
         <div class="container">
           <div class="sign-up__wrapper">
-            <button class="close-block btn" type="button">
+            <button class="btn close-block" type="button">
               <svg class="close">
                 <use href="./images/favicons/sprite.svg#close" />
               </svg>
@@ -371,17 +366,17 @@
                 get 20% off your first booking
               </h3>
               <button class="btn sign-up__button">Sign up</button>
-              <a class="sign-up__link" href="#">Install</a>
+              <a class="link sign-up__link" href="#">Install</a>
             </div>
           </div>
         </div>
       </section>
       <section class="reviews">
         <div class="container">
-          <h2 class="reviews__title title _displ-none">Guests reviews</h2>
-          <h2 class="reviews__title title _displ-none__desktop">Reviews</h2>
-          <div class="row reviews__wrap-cards">
-            <div class="col-lg-4 col-md-6 col-sm-6 review__card">
+          <h2 class="title reviews__title _displ-none">Guests reviews</h2>
+          <h2 class="title reviews__title _displ-none__desktop">Reviews</h2>
+          <ul class="row reviews__wrap-cards">
+            <li class="col-lg-4 col-md-6 col-sm-6 review__card">
               <div class="review__wrap">
                 <div class="review__wrap-img">
                   <img
@@ -394,10 +389,10 @@
                 <div class="review__wrap-content">
                   <div class="review__title">
                     <div class="review__links">
-                      <a class="review__link review__link--main" href="#"
+                      <a class="link review__link review__link--main" href="#"
                         >Ubud Bali Resort&SPA</a
                       >
-                      <a class="review__link" href="#">Bali, Indonesia</a>
+                      <a class="link review__link" href="#">Bali, Indonesia</a>
                     </div>
                     <div class="review__rating">
                       <div class="review__grade">9,4</div>
@@ -427,8 +422,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 review__card">
+            </li>
+            <li class="col-lg-4 col-md-6 col-sm-6 review__card">
               <div class="review__wrap">
                 <div class="review__wrap-img">
                   <img
@@ -441,10 +436,10 @@
                 <div class="review__wrap-content">
                   <div class="review__title">
                     <div class="review__links">
-                      <a class="review__link review__link--main" href="#"
+                      <a class="link review__link review__link--main" href="#"
                         >King Kong Hostel</a
                       >
-                      <a class="review__link" href="#"
+                      <a class="link review__link" href="#"
                         >Rotterdam, Netherlands</a
                       >
                     </div>
@@ -469,16 +464,16 @@
                     </div>
                     <p class="review__description">
                       I've been in this hostel for a month and here is the best
-                      hostel of all Excellent management of excellent and
+                      hostel of all&nbsp;Excellent management of excellent and
                       ethical staff and bedrooms Bathrooms are always clean and
-                      excellent Most importantly, those who work here are kind
-                      and good-natured.
+                      excellent&nbsp;Most importantly, those who work here are
+                      kind and good-natured.
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6 review__card">
+            </li>
+            <li class="col-lg-4 col-md-6 col-sm-6 review__card">
               <div class="review__wrap">
                 <div class="review__wrap-img">
                   <img
@@ -491,10 +486,10 @@
                 <div class="review__wrap-content">
                   <div class="review__title">
                     <div class="review__links">
-                      <a class="review__link review__link--main" href="#"
+                      <a class="link review__link review__link--main" href="#"
                         >Rokoko Hotel</a
                       >
-                      <a class="review__link" href="#">Ourika, Marocco</a>
+                      <a class="link review__link" href="#">Ourika, Marocco</a>
                     </div>
                     <div class="review__rating">
                       <div class="review__grade">9,1</div>
@@ -525,21 +520,21 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </li>
             <button
-              class="arrow-block btn reviews__arrow-block _displ-none"
+              class="btn arrow-block reviews__arrow-block _displ-none"
               type="button"
             >
               <svg class="arrow">
                 <use href="./images/favicons/sprite.svg#arrow" />
               </svg>
             </button>
-          </div>
+          </ul>
           <div class="review__carousel">
-            <button class="review__cirсle"></button>
-            <button class="review__cirсle"></button>
-            <button class="review__cirсle"></button>
-            <button class="review__cirсle"></button>
+            <button class="btn review__cirсle"></button>
+            <button class="btn review__cirсle"></button>
+            <button class="btn review__cirсle"></button>
+            <button class="btn review__cirсle"></button>
           </div>
         </div>
       </section>
@@ -551,65 +546,61 @@
             <use href="./images/favicons/sprite.svg#logo" />
           </svg>
         </div>
-        <div class="row footer__list">
-          <div class="col-lg-4 col-md-3 col-sm-1">
-            <div class="footer__element">
-              <h4 class="footer__title">About</h4>
-              <ul class="footer__items">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">How Triphouse works</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Careers</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Privacy</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Terms</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-3 col-sm-2">
-            <div class="footer__element">
-              <h4 class="footer__title">Property types</h4>
-              <ul class="footer__items">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Guest houses</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Hotels</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Apartments</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Villas</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Holiday homes</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Hostels</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-3 col-sm-1">
-            <div class="footer__element">
-              <h4 class="footer__title">Support</h4>
-              <ul class="footer__items">
-                <li class="footer__item">
-                  <a class="footer__link" href="#">Contact Customer Service</a>
-                </li>
-                <li class="footer__item">
-                  <a class="footer__link" href="#">FAQ</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <ul class="row footer__list">
+          <li class="col-lg-4 col-md-3 col-sm-1 footer__element">
+            <h4 class="footer__title">About</h4>
+            <ul class="footer__items">
+              <li class="footer__item">
+                <a class="link footer__link" href="#">How Triphouse works</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Careers</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Privacy</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Terms</a>
+              </li>
+            </ul>
+          </li>
+          <li class="col-lg-4 col-md-3 col-sm-2 footer__element">
+            <h4 class="footer__title">Property types</h4>
+            <ul class="footer__items">
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Guest houses</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Hotels</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Apartments</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Villas</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Holiday homes</a>
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">Hostels</a>
+              </li>
+            </ul>
+          </li>
+          <li class="col-lg-4 col-md-3 col-sm-1 footer__element">
+            <h4 class="footer__title">Support</h4>
+            <ul class="footer__items">
+              <li class="footer__item">
+                <a class="link footer__link" href="#"
+                  >Contact Customer Service</a
+                >
+              </li>
+              <li class="footer__item">
+                <a class="link footer__link" href="#">FAQ</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
         <p class="footer__author">© 2022Triphouse, Inc. All rights reserved</p>
       </div>
     </footer>

@@ -235,7 +235,7 @@ body {
 
 .top-section {
   padding-top: 290px;
-  background: url("../images/top-section.jpg") center;
+  background: url("../images/jpg/top-section/top-section.jpg") center;
   min-height: 100vh;
   background-size: cover;
   padding-bottom: var(--block-space);
@@ -740,6 +740,17 @@ input::-webkit-input-placeholder {
   font-size: 18px;
   line-height: 21px;
   color: var(--text-main-color);
+}
+
+.user__country{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.country__flag{
+  width: 16px;
+  height: 12px;
 }
 
 .country__name {

@@ -7,11 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TripHouse</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="./images/favicons/booking-icon.svg"
-    />
+    <link rel="icon" type="image/x-icon" href="images/booking-icon.svg" />
   </head>
   <body>
     <header class="header">
@@ -189,10 +185,10 @@
 
           <div class="top-section__download">
             <a href="#">
-              <img src="./images/google-play-badge.png" />
+              <img src="./images/jpg/top-section/google-play.png" />
             </a>
             <a href="#">
-              <img src="./images/app-store.png" />
+              <img src="./images/jpg/top-section/app-store.png" />
             </a>
           </div>
         </div>
@@ -233,7 +229,7 @@
             <li class="col-lg-3 col-md-6 col-sm-3 homes__card">
               <img
                 class="homes__img"
-                src="./images/hotel-leopold.jpg"
+                src="images/jpg/homes/hotel-leopold.jpg"
                 alt="Hotel Leopold"
               />
               <a class="link homes__link" href="#">Hotel Leopold</a>
@@ -242,7 +238,7 @@
             <li class="col-lg-3 col-md-6 col-sm-3 homes__card">
               <img
                 class="homes__img"
-                src="./images/apartment-sunshine.jpg"
+                src="images/jpg/homes/apartment-sunshine.jpg"
                 alt="Apartment Sunshine"
               />
               <a class="link homes__link" href="#">Apartment Sunshine</a>
@@ -251,7 +247,7 @@
             <li class="col-lg-3 col-md-6 col-sm-3 homes__card _displ-none">
               <img
                 class="homes__img"
-                src="./images/villa-kunerad.jpg"
+                src="images/jpg/homes/villa-kunerad.jpg"
                 alt="Villa Kunerad"
               />
               <a class="link homes__link" href="#">Villa Kunerad</a>
@@ -260,7 +256,7 @@
             <li class="col-lg-3 col-md-6 col-sm-3 homes__card _displ-none">
               <img
                 class="homes__img"
-                src="./images/hostel-friendship.jpg"
+                src="images/jpg/homes/hostel-friendship.jpg"
                 alt="Hostel Friendship"
               />
               <a class="link homes__link" href="#">Hostel Friendship</a>
@@ -291,7 +287,7 @@
               <div class="destination__card">
                 <img
                   class="destination__img"
-                  src="./images/maldives.jpg"
+                  src="images/jpg/destinations/maldives.jpg"
                   alt="Maldives"
                 />
                 <button class="btn destination__button-img">Book now</button>
@@ -302,7 +298,7 @@
               <div class="destination__card">
                 <img
                   class="destination__img"
-                  src="./images/spain.jpg"
+                  src="images/jpg/destinations/spain.jpg"
                   alt="Spain"
                 />
                 <button class="btn destination__button-img">Book now</button>
@@ -313,7 +309,7 @@
               <div class="destination__card">
                 <img
                   class="destination__img"
-                  src="./images/norway.jpg"
+                  src="images/jpg/destinations/norway.jpg"
                   alt="Norway"
                 />
                 <button class="btn destination__button-img">Book now</button>
@@ -324,7 +320,7 @@
               <div class="destination__card">
                 <img
                   class="destination__img"
-                  src="./images/island.jpg"
+                  src="images/jpg/destinations/island.jpg"
                   alt="Island"
                 />
                 <button class="btn destination__button-img">Book now</button>
@@ -381,7 +377,7 @@
                 <div class="review__wrap-img">
                   <img
                     class="review__img"
-                    src="./images/resort.jpg"
+                    src="images/jpg/reviews/resort.jpg"
                     alt="Resort"
                   />
                   <p class="review__price">From 250 USD</p>
@@ -407,9 +403,10 @@
                       <div class="user__info">
                         <p class="user__name">Hanna Ivanova</p>
                         <div class="user__country">
-                          <div class="country__flag"></div>
-                          <!--Сделать флаг-->
-                          <p class="country__name">ua Ukraine</p>
+                          <svg class="country__flag">
+                            <use href="./images/favicons/sprite.svg#ukraine" />
+                          </svg>
+                          <p class="country__name">Ukraine</p>
                         </div>
                       </div>
                     </div>
@@ -428,7 +425,7 @@
                 <div class="review__wrap-img">
                   <img
                     class="review__img"
-                    src="./images/hostel.jpg"
+                    src="images/jpg/reviews/hostel.jpg"
                     alt="Hostel"
                   />
                   <p class="review__price">From 40 USD</p>
@@ -456,18 +453,24 @@
                       <div class="user__info">
                         <p class="user__name">Adam Smith</p>
                         <div class="user__country">
-                          <div class="country__flag"></div>
-                          <!--Сделать флаг-->
-                          <p class="country__name">🇺🇸 USA</p>
+                          <svg class="country__flag">
+                            <use href="./images/favicons/sprite.svg#usa" />
+                          </svg>
+                          <p class="country__name">USA</p>
                         </div>
                       </div>
                     </div>
                     <p class="review__description">
                       I've been in this hostel for a month and here is the best
-                      hostel of all&nbsp;Excellent management of excellent and
-                      ethical staff and bedrooms Bathrooms are always clean and
-                      excellent&nbsp;Most importantly, those who work here are
-                      kind and good-natured.
+                      hostel of all
+                    </p>
+                    <p class="review__description">
+                      Excellent management of excellent and ethical staff and
+                      bedrooms Bathrooms are always clean and excellent
+                    </p>
+                    <p class="review__description">
+                      Most importantly, those who work here are kind and
+                      good-natured.
                     </p>
                   </div>
                 </div>
@@ -478,7 +481,7 @@
                 <div class="review__wrap-img">
                   <img
                     class="review__img"
-                    src="./images/hotel.jpg"
+                    src="images/jpg/reviews/hotel.jpg"
                     alt="Hotel"
                   />
                   <p class="review__price">From 100 USD</p>
@@ -504,9 +507,10 @@
                       <div class="user__info">
                         <p class="user__name">Anika Messer</p>
                         <div class="user__country">
-                          <div class="country__flag"></div>
-                          <!--Сделать флаг-->
-                          <p class="country__name">🇩🇪 Germany</p>
+                          <svg class="country__flag">
+                            <use href="./images/favicons/sprite.svg#germany" />
+                          </svg>
+                          <p class="country__name">Germany</p>
                         </div>
                       </div>
                     </div>

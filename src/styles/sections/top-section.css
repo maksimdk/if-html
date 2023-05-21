@@ -1,6 +1,6 @@
 .top-section {
   padding-top: 290px;
-  background: url("src/images/jpg/top-section/top-section.jpg") center;
+  background: url("../../images/jpg/top-section/top-section.jpg") center;
   min-height: 100vh;
   background-size: cover;
   padding-bottom: var(--block-space);
@@ -18,7 +18,6 @@
   display: flex;
   justify-content: center;
   gap: var(--unit);
-  /*margin-bottom: 120px;*/
 }
 
 @media (max-width: 1024px) {
